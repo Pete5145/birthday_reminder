@@ -1,23 +1,24 @@
 import React, {useState} from 'react';
 import data from './data'
-// import Header from './assets/components/Header';
-// import Profile from './assets/components/Profile';
-// import Button from './assets/components/Button';
 
 function App() {
+  // Use the useState hook to store the users and count in local state
   const [users, setUsers] = useState(data);
   const [count, setCount] = useState(5);
 
+  // Define a function to clear the users and set the count to 0
   function clearBirthdays() {
       setUsers([]);
       setCount(0)
   }
 
   return (
+    // Render a section containing a header, a list of user profiles, and a Clear All button
     <section className="card">
       <h3 className="header">{`${count} birthdays today`}</h3>
       <article>
         {users.map((user) => {
+          // Destructure the user object
           const { id, name, age, img } = user;
           return (
             <div className="profile" key={id}>
@@ -38,6 +39,7 @@ function App() {
 }
 
 export default App
+
 
       {/* <Profile name="Hester Hogan" age="32 years" img="hester_hogan.jpg" />
       <Profile name="Larry Little" age="36 years" img="larry_little.jpg" />
