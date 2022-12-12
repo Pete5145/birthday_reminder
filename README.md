@@ -9,11 +9,15 @@ Installation
 To use this application, follow these steps:
 
 Clone this repository to your local machine
-Copy code
-git clone https://github.com/user/repo.git
+
+`git clone`
+
+https://github.com/Pete5145/birthday_reminder/tree/main
+
 Install the necessary dependencies
 
 `npm install`
+
 Run the application in development mode
 
 `npm start`
