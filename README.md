@@ -44,6 +44,14 @@ Button: This component is a simple button that allows the user to clear all birt
 Styling
 The styles for the application are defined in the index.css file in the src directory. The styles use CSS Flexbox for layout and are written in a mobile-first approach.
 
+
+| Technologies used |
+|-------------------|
+| React             |
+| CSS               |
+| Vite              |
+
+
 ## Author
 
 [Peter Imade](https://github.com/Pete5145) is the author of this project.
